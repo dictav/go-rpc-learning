@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+service FizzBuzzService {
+  rpc FizzBuzz(Request) returns (Response) {};
+}
+
+message Response {
+  string answer = 1;
+}
+
+message Request{
+  int32  n  = 1;
+}
